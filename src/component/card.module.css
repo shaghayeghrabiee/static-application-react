@@ -1,0 +1,44 @@
+.container img {
+  width: 300px;
+}
+.container {
+  background-color: rgb(123, 123, 153);
+  margin: 10px;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 5px 10px 10px rgb(37, 28, 54);
+  align-items: center;
+  justify-content: center;
+}
+.conatienr h3 {
+  color: #696969;
+  margin: 30px 20px 20px;
+}
+.container p {
+  color: white;
+  background-color: rgb(24, 122, 58);
+  width: fit-content;
+  padding: 5px;
+  border-radius: 5px;
+  margin: 10px auto;
+}
+.image {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.image img {
+  border-radius: 50%;
+  width: 25px;
+  padding: 5px;
+  cursor: pointer;
+}
+.image span {
+  background-color: darkmagenta;
+  width: 30px;
+  border-radius: 10px;
+  color: white;
+}
+.disActive {
+  opacity: 0.5;
+}

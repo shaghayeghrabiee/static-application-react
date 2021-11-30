@@ -1,0 +1,24 @@
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: rgb(123, 123, 153);
+}
+.logo {
+  border-radius: 50%;
+  width: 40px;
+  padding: 10px;
+}
+.list {
+  display: flex;
+  list-style: none;
+}
+.list li {
+  padding: 20px;
+  font-weight: bold;
+  color: white;
+  cursor: pointer;
+}
+.list li:hover {
+  color: rgb(10, 10, 59);
+}
