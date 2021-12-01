@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import Style from './card.module.css';
-// import * as Arrow from 'react-icons/bs';
+// import * as Arrow from 'react-icons/bs'; <img src={down} alt="" onClick={this.downHandle}  className={this.state.counter==0 ? Style.disActive: ""}/>
 
 import up from '../images/up.png';
 import down from '../images/down.png';
@@ -32,10 +32,12 @@ class Card extends Component {
         <div className={Style.container}>
             <img src={image} alt="apple"/>
             <h3>{title}</h3>
-            <p>{cost}</p>  
-            <div className={Style.image}>
-               <img src={down} alt="" onClick={this.downHandle}  className={!this.state.counter==0 ? "": Style.disActive}/>
-               <span>{counter}</span>
+            <p>{cost}$</p>  
+            <p className={!this.state.counter && Style.active}>Total Price:{counter * cost}</p>
+            
+            <div className={Style.image}>             
+               <img src={down} alt="" onClick={this.downHandle}  className={!this.state.counter && Style.disActive}/>
+               <span>{counter} </span>
                 <img src={up} alt="" onClick={this.upHandle} />
             </div>    
 

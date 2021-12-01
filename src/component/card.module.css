@@ -42,3 +42,6 @@
 .disActive {
   opacity: 0.5;
 }
+.active {
+  display: none;
+}
